@@ -2,7 +2,7 @@ import axios from 'axios'
 import { envUri } from './environment'
 
 const isServerUp = async (cb) => {
-    return axios.get(envUri + "/api").then(() => cb()).catch(() => 
+    return axios.get(envUri + "/status").then(() => cb()).catch(() => 
     //eslint-disable-next-line
     console.log("server_status: down"))
 }
