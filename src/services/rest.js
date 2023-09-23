@@ -1,6 +1,6 @@
 import axios from 'axios'
-import { envUri } from './environment'
 
+const envUri = import.meta.env.VITE_API_URL
 const isServerUp = async (cb) => {
     return axios.get(envUri + "/status").then(() => cb()).catch(() => 
     //eslint-disable-next-line

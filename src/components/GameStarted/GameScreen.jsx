@@ -8,7 +8,7 @@ import { AppContext } from '../../App'
 
 import { mySocket, checkIsMyTurn } from '../../services/game-sockets'
 
-import { envUri } from '../../services/environment'
+const envUri = import.meta.env.VITE_API_URL
 
 import { isNil } from 'ramda'
 import { MainOption, Option } from '../../common/components/Button'

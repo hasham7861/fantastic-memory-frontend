@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import { Smile as IconSmile, Key as IconKey, Clipboard as IconClipBoard} from 'react-feather';
 
 import { AppContext } from '../../../App'
-import { envUri } from '../../../services/environment';
+const envUri = import.meta.env.VITE_API_URL
 
 import {isNil, equals}  from 'ramda'
 

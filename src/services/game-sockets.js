@@ -1,6 +1,7 @@
 import io from 'socket.io-client'
-import { envUri } from './environment'
 import { isServerUp } from './rest'
+
+const envUri = import.meta.env.VITE_API_URL
 
 export const mySocket = io(envUri + "/game-nsp")
 
