@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { initiateGameSockets } from '../services/game-sockets';
 import GameLogo from '../images/logo.png'
+import { Instructions } from './GameMenu';
 
 initiateGameSockets.then(data => data);
 
@@ -17,10 +18,10 @@ export default function () {
             <Heading>Fantastic Memory</Heading>
             <SubHeading>draw and your friends will guess your drawing</SubHeading>
             <OptionsContainer>
-                <MainOption to="/join-game">Join Game</MainOption>
                 <Option to="/host-game">Host Game</Option>
-                <Option to="/instructions">Instructions</Option>
+                <MainOption to="/join-game">Join Game</MainOption>
             </OptionsContainer>
+            <Instructions></Instructions>
         </SplashPageContainer>
     )
 }
@@ -28,7 +29,7 @@ export default function () {
 const SplashPageContainer = styled.div`
     display:flex;
     width: 100%;
-    height: 700px;
+    height: 9540px;
     justify-content: center;
     align-items: center;
     flex-direction: Column;
@@ -51,7 +52,8 @@ const SubHeading = styled.h2`
 
 const OptionsContainer = styled.div`
     display: flex;
-    flex-direction: Column;
+    flex-direction: row;
+    margin-bottom: 30px;
 `
 
 const Option = styled(Link)`
