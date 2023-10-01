@@ -40,6 +40,10 @@ const Heading = styled.h1`
     font-family: Helvetica, Arial, sans-serif;
     font-size: 4rem;
     line-height:0;
+
+    @media(max-width: 768px) {
+        font-size: 3rem;
+    }
 `
 
 const SubHeading = styled.h2`
@@ -48,6 +52,10 @@ const SubHeading = styled.h2`
     font-weight:lighter;
     line-height:0;
     margin-bottom:40px;
+
+    @media(max-width: 768px) {
+        font-size: 1.2rem;
+    }
 `
 
 const OptionsContainer = styled.div`

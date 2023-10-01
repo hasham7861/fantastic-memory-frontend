@@ -1,21 +1,28 @@
-// import React from 'react';
+import React from 'react';
+import styled from 'styled-components';
 
-// const YouTubeVideo = ({ videoId }) => {
-//   return (
-//     <div>
-//       <iframe
-//         width="560"
-//         height="315"
-//         src={`https://www.youtube.com/embed/${videoId}`}
-//         title="YouTube video player"
-//         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-//         allowFullScreen
-//       ></iframe>
-//     </div>
-//   );
-// };
+const YouTubeVideo = ({ videoId, width, height}) => {
+  return (
+    <div>
+      <IFrameWrapper
+        width={width}
+        height={height}
+        src={`https://www.youtube.com/embed/${videoId}`}
+        title="YouTube video player"
+        allow="accelerometer; autoplay=0; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></IFrameWrapper>
+    </div>
+  );
+};
 
-// export default YouTubeVideo;
+const IFrameWrapper = styled.iframe`
+  border: none; /* Remove the iframe border */
+  border-radius: 8px; /* Add rounded corners to the iframe */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  margin-bottom: 20px; /* Add some spacing at the bottom */
+`;
+export default YouTubeVideo;
 
 
 
