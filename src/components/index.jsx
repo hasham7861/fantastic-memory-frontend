@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { initiateGameSockets } from '../services/game-sockets';
 import GameLogo from '../images/logo.png'
-import { Instructions } from './GameMenu';
+import Instructions from './instructions'
 
 initiateGameSockets.then(data => data);
 
@@ -21,7 +21,7 @@ export default function () {
                 <Option to="/host-game">Host Game</Option>
                 <MainOption to="/join-game">Join Game</MainOption>
             </OptionsContainer>
-            <Instructions></Instructions>
+            <Instructions/>
         </SplashPageContainer>
     )
 }
@@ -29,7 +29,7 @@ export default function () {
 const SplashPageContainer = styled.div`
     display:flex;
     width: 100%;
-    height: 9540px;
+    height: 950px;
     justify-content: center;
     align-items: center;
     flex-direction: Column;
