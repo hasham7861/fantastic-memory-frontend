@@ -5,9 +5,9 @@ import YouTubeVideo from './youtubeVideo'
 function Instructions() {
     return (
         <InstructionsContainer>
-            <VideoWrapper>
+            {/* <VideoWrapper>
                 <YouTubeVideo videoId={"-IKaocZrjrc"} />
-            </VideoWrapper>
+            </VideoWrapper> */}
             <DescriptionsWrapper>
                 Fantastic Memory is a multiplayer drawing guessing game with two main modes: Host Game (create a game and invite friends with your unique gameId) and Join Game (enter a friend's gameId to join their game).
             </DescriptionsWrapper>
