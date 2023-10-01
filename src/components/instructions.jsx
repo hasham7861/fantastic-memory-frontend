@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import YouTubeVideo from './youtubeVideo'
+// import YouTubeVideo from './youtubeVideo'
 
 function Instructions() {
     return (
@@ -24,9 +24,9 @@ const InstructionsContainer = styled.div`
     background-color: #f1def1;
     border-radius:20px;
 `
-const VideoWrapper = styled.div`
-    margin-top:20px;
-`
+// const VideoWrapper = styled.div`
+//     margin-top:20px;
+// `
 const DescriptionsWrapper = styled.div`
     width:500px;
     font-family: Helvetica, Arial, sans-serif;
