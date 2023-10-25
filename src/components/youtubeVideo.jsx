@@ -9,7 +9,7 @@ const YouTubeVideo = ({ videoId, width, height}) => {
         height={height}
         src={`https://www.youtube.com/embed/${videoId}`}
         title="YouTube video player"
-        allow="accelerometer; autoplay=0; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></IFrameWrapper>
     </div>

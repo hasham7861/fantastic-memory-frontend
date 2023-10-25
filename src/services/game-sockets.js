@@ -7,7 +7,7 @@ export const mySocket = io(envUri + "/game-nsp")
 
 export const initiateGameSockets = isServerUp(() => {
     mySocket.on('connect', function () {
-        return "intiated all socket"
+        return "initiated all socket"
     })
 
     // mySocket.on('disconnect', function (){
